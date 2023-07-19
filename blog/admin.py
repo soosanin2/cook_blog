@@ -9,11 +9,13 @@ class RecipleInline(admin.StackedInline):
     extra = 1
 
 
-
+# налаштування адмінки
 @admin.register(models.Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ["title", "category", "create_at", "author"]
     inlines = [RecipleInline]
+    save_as = True
+    save_on_top = True
 
 
 @admin.register(models.Recipe)

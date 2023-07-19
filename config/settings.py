@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'mptt',
+    'mptt',         #  Django, 'mptt' - це пакет, який додає підтримку MPTT до вашого проекту, дозволяючи зручно працювати з ієрархічними даними та здійснювати ефективний доступ до них. Це допомагає спростити операції з деревами та іншими ієрархічними структурами даних у Django-проектах.
+    'ckeditor',     #  'ckeditor' (CKEditor) - це одна з популярних бібліотек для візуального редагування тексту в браузері. Вона пропонує зручний інтерфейс та можливості форматування тексту, дозволяючи користувачам легко створювати та редагувати вміст веб-сторінок з використанням елементів WYSIWYG (What You See Is What You Get - що бачиш, то й отримуєш).
 
     'blog',
 ]
@@ -131,3 +132,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
