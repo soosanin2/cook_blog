@@ -24,10 +24,10 @@
             <img src="{{ about.get_firsf_image }}" alt="">
             {{ about.mini_text|safe }}
             <div class="humberger__menu__about__social sidebar__item__follow__links">
-                    {% get_social_links as sacial_links %}
-                    {% for item in sacial_links %}
-                        <a href="{{ item.link }}"><img class="contact_icon" src="{{ item.icon.url }}"></a>
-                    {% endfor %}
+                {% get_social_links as sacial_links %}
+                {% for item in sacial_links %}
+                    <a href="{{ item.link }}"><img class="contact_icon" src="{{ item.icon.url }}"></a>
+                {% endfor %}
             </div>
         </div>
 
